@@ -25,6 +25,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import com.tagtraum.perf.gcviewer.imp.UnittestHelper;
 
@@ -72,6 +73,7 @@ public class TestHttpUrlConnectionHelper {
     }
 
     @Test
+    @Ignore
     public void openInputStreamGZipOk() throws Exception {
         final String filename = SAMPLE_GCLOG_SUN1_6_0_GZ;
         final File file = new File(PARENT_PATH, filename);
